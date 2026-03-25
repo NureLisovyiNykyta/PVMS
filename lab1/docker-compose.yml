@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./server
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  web:
+    build: ./client
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    restart: unless-stopped

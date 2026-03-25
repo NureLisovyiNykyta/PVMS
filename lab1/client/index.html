@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracket Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Bracket Converter</h2>
+        <p class="subtitle">Replace all ( ) with [ ]</p>
+
+        <div class="input-group">
+            <label for="inputText">Enter your text:</label>
+            <input type="text" id="inputText" placeholder="e.g. This is a (test) string" autocomplete="off">
+        </div>
+
+        <button id="submitBtn">Process String</button>
+
+        <div class="result-box" id="resultBox">
+            <span class="result-label">Result:</span>
+            <p id="resultText" class="placeholder">Awaiting input...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
