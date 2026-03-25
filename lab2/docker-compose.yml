@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tcp_server:
+    build: .
+    command: python tcp_server.py
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+
+  udp_server:
+    build: .
+    command: python udp_server.py
+    ports:
+      - "8002:8002/udp"
+    restart: unless-stopped
