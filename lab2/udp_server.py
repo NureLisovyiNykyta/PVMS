@@ -1,4 +1,5 @@
 import socket
+import time
 
 HOST = '127.0.0.1'
 PORT = 8002
@@ -11,6 +12,7 @@ print(f"UDP Server running on {HOST}:{PORT}. Waiting for data...")
 try:
     while True:
         data, client_address = server_socket.recvfrom(1024)
+        # time.sleep(0.01)
         decoded_data = data.decode('utf-8')
 
         try:

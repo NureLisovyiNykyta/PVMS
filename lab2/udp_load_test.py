@@ -4,7 +4,7 @@ import time
 
 HOST = '127.0.0.1'
 PORT = 8002
-REQUESTS = 500
+REQUESTS = 1000
 
 def make_udp_request(i):
     try:
