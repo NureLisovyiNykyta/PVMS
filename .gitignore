@@ -3,6 +3,10 @@ venv/
 env/
 .env
 
+*.zip
+*.pcapng
+*.db
+
 __pycache__/
 *.py[cod]
 *$py.class
