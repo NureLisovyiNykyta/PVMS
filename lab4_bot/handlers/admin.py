@@ -51,7 +51,7 @@ async def admin_main(message: Message, state: FSMContext):
 async def cancel_admin_fsm(message: Message, state: FSMContext):
     current_state = await state.get_state()
     if current_state is not None:
-        await state.clear() # Очищаємо пам'ять FSM
+        await state.clear()
     await message.answer("Дію скасовано ❌", reply_markup=admin_main_kb)
 
 
